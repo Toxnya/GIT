@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #87CEEB;
+}
+
+.house {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #FFD700; /* Цвет основания */
+}
+
+.roof {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 50px solid #8B4513; /* Цвет крыши */
+}
+
+.chimney {
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 70px;
+    background-color: #696969; /* Цвет дымохода */
+}
+
+.window {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Создание круглой формы */
+    background-color: #ADD8E6; /* Цвет окна */
+    box-shadow: 0 0 0 5px #000; /* Тень вокруг окна */
+}
